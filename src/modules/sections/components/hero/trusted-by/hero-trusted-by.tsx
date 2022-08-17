@@ -1,6 +1,8 @@
 import React from 'react';
 import AirbnbLogo from './airbnb-logo';
 import GoogleLogo from './google-logo';
+import NikeLogo from './nike-logo';
+import StripeLogo from './stripe-logo';
 
 const HeroTrustedBy: React.FC = () => {
   return (
@@ -11,6 +13,8 @@ const HeroTrustedBy: React.FC = () => {
       <div className="mt-8 flex flex-wrap items-center justify-center text-gray-500 sm:justify-between">
         <AirbnbLogo />
         <GoogleLogo />
+        <NikeLogo />
+        <StripeLogo />
       </div>
     </div>
   );

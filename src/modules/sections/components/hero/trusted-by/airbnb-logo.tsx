@@ -2,12 +2,7 @@ import React from 'react';
 
 const AirbnbLogo: React.FC = () => {
   return (
-    <svg
-      className="h-10 w-20 sm:w-28 md:w-40"
-      viewBox="0 0 125 35"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg className="h-10" viewBox="0 0 125 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
