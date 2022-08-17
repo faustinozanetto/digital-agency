@@ -5,7 +5,7 @@ import HeroHowItWorksButton from './hero-works-button';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white py-8 sm:py-10 md:py-16">
       <div className="mx-auto max-w-screen-xl py-8 px-4 text-center lg:py-16 lg:px-12">
         {/* Main Heading */}
         <h1 className="mb-4 text-5xl font-extrabold leading-none tracking-tight text-black md:text-6xl lg:text-7xl">
