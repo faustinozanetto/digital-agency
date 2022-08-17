@@ -1,5 +1,5 @@
 import React from 'react';
-import ServiceCard, { Service } from './services-service-card';
+import ServiceCard, { Service } from './service-card';
 
 const SERVICES: Service[] = [
   {
@@ -62,6 +62,66 @@ const SERVICES: Service[] = [
       </svg>
     ),
   },
+  {
+    title: 'Digital Marketing',
+    description: 'We help you reach your target audience and grow your business.',
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'E-Commerce',
+    description: 'We build e-commerce websites that are fast, secure, and easy to use.',
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'Web Hosting',
+    description: 'We provide reliable, secure, and fast web hosting services.',
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+        />
+      </svg>
+    ),
+  },
 ];
 
 const ServicesSection: React.FC = () => {
@@ -82,10 +142,21 @@ const ServicesSection: React.FC = () => {
         {/* Bottom Part */}
         <div className="mt-4 sm:mt-8 md:mt-10">
           {/* Services */}
-          <div className="space-y-8 sm:gap-6 lg:grid lg:grid-cols-3 lg:space-y-0 xl:gap-10">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8">
             {SERVICES.map((service) => (
               <ServiceCard key={service.title} service={service} />
             ))}
+          </div>
+        </div>
+        {/* Custom Service */}
+        <div className="mt-8 sm:mt-12 md:mt-16">
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl">
+              Don&apos;t see what you need?
+            </h3>
+            <p className="text-center text-xl text-gray-600">
+              We offer custom services to meet your needs. Contact us to learn more.
+            </p>
           </div>
         </div>
       </div>
