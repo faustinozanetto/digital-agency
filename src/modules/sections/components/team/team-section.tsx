@@ -49,7 +49,7 @@ const TEAM_MEMBERS: TeamMember[] = [
 
 const TeamSection: React.FC = () => {
   return (
-    <section className="bg-amber-50 py-8 sm:py-10 md:py-16">
+    <section className="bg-[#FFFCF3] py-8 sm:py-10 md:py-16">
       <div className="mx-auto max-w-screen-xl space-y-10 py-8 px-4 text-center lg:py-16 lg:px-12">
         {/* Top Part */}
         <div className="flex w-full flex-col items-center ">

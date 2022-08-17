@@ -4,7 +4,7 @@ import AboutUsStats from './about-us-stats';
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="bg-amber-50 py-8 sm:py-10 md:py-16">
+    <section className="bg-[#FFFCF3] py-8 sm:py-10 md:py-16">
       <div className="mx-auto max-w-screen-xl items-center gap-8 py-8 px-4 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16">
         {/* First Part */}
         <div className="flex w-full flex-col items-start space-y-10">
