@@ -1,54 +1,32 @@
 import React from 'react';
+import HeroGetStartedButton from './hero-get-started-button';
+import HeroHowItWorksButton from './hero-works-button';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white">
       <div className="mx-auto max-w-screen-xl py-8 px-4 text-center lg:py-16 lg:px-12">
-        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-          We invest in the world’s potential
+        {/* Main Heading */}
+        <h1 className="mb-4 text-5xl font-extrabold leading-none tracking-tight text-black md:text-6xl lg:text-7xl">
+          Digital Agency <br /> for the
+          <span className="text-lime-400"> Modern Era</span>
         </h1>
-        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-          Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
-          drive economic growth.
+
+        {/* Text */}
+        <p className="mb-8 text-lg font-semibold text-gray-700 sm:px-16 lg:text-xl xl:px-48">
+          We are a digital agency that believes in building things that are meaningful!
         </p>
-        <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-          <a
-            href="#"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-          >
-            Learn more
-            <svg
-              className="ml-2 -mr-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </a>
-          <a
-            href="#"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-          >
-            <svg
-              className="mr-2 -ml-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
-            </svg>
-            Watch video
-          </a>
+        {/* CTA Buttons */}
+        <div className="mb-8 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 lg:mb-16">
+          {/* Get Started */}
+          <HeroGetStartedButton />
+          {/* How It Works */}
+          <HeroHowItWorksButton />
         </div>
         <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
           <span className="font-semibold text-gray-400 uppercase">FEATURED IN</span>
           <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
-            <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+            <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 ">
               <svg className="h-8" viewBox="0 0 132 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M39.4555 5.17846C38.9976 3.47767 37.6566 2.13667 35.9558 1.67876C32.8486 0.828369 20.4198 0.828369 20.4198 0.828369C20.4198 0.828369 7.99099 0.828369 4.88379 1.64606C3.21571 2.10396 1.842 3.47767 1.38409 5.17846C0.566406 8.28567 0.566406 14.729 0.566406 14.729C0.566406 14.729 0.566406 21.2051 1.38409 24.2796C1.842 25.9804 3.183 27.3214 4.88379 27.7793C8.0237 28.6297 20.4198 28.6297 20.4198 28.6297C20.4198 28.6297 32.8486 28.6297 35.9558 27.812C37.6566 27.3541 38.9976 26.0131 39.4555 24.3123C40.2732 21.2051 40.2732 14.7618 40.2732 14.7618C40.2732 14.7618 40.3059 8.28567 39.4555 5.17846Z"
@@ -101,7 +79,7 @@ const HeroSection: React.FC = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+            <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 ">
               <svg className="h-11" viewBox="0 0 120 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M20.058 40.5994C31.0322 40.5994 39.9286 31.7031 39.9286 20.7289C39.9286 9.75473 31.0322 0.858398 20.058 0.858398C9.08385 0.858398 0.1875 9.75473 0.1875 20.7289C0.1875 31.7031 9.08385 40.5994 20.058 40.5994Z"
