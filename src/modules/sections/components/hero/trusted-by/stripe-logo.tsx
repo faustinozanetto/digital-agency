@@ -2,7 +2,7 @@ import React from 'react';
 
 const StripeLogo: React.FC = () => {
   return (
-    <svg className="h-10" viewBox="0 0 72 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <svg className="m-auto h-10" viewBox="0 0 72 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

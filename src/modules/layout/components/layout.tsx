@@ -1,3 +1,4 @@
+import Footer from 'modules/footer/components/footer';
 import Navbar from 'modules/navbar/components/navbar';
 import React from 'react';
 
@@ -17,6 +18,9 @@ const Layout: React.FC<ILayoutProps> = (props) => {
         {/* Children */}
         {children}
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

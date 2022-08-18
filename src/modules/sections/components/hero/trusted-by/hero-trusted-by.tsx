@@ -10,7 +10,7 @@ const HeroTrustedBy: React.FC = () => {
       {/* Heading */}
       <span className="text-lg font-semibold text-gray-500">Over 65k users trust us from different companies</span>
       {/* Companies */}
-      <div className="mt-8 flex flex-wrap items-center justify-center text-gray-500 sm:justify-between">
+      <div className="mt-8 grid grid-cols-2 items-center justify-center gap-4 text-gray-500 md:grid-cols-4">
         <AirbnbLogo />
         <GoogleLogo />
         <NikeLogo />
