@@ -15,7 +15,7 @@ const PricingPlanCard: React.FC<IPricingPlanCardProps> = (props) => {
   const { plan } = props;
 
   return (
-    <div className="mx-auto flex flex-col rounded-2xl bg-white p-8 text-gray-900 drop-shadow-2xl">
+    <div className="mx-auto flex flex-col rounded-2xl bg-white p-6 text-gray-900 drop-shadow-2xl sm:p-8">
       {/* Title */}
       <h3 className="text-2xl font-semibold">{plan.title}</h3>
       {/* Price */}

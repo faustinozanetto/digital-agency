@@ -35,7 +35,7 @@ const AboutSection: React.FC = () => {
           <AboutUsQualification text="We are a team of 10 people" />
           <AboutUsQualification text="Free lifetime support" />
           {/* Stats */}
-          <AboutUsStats />
+          {/* <AboutUsStats /> */}
         </div>
       </div>
     </section>
