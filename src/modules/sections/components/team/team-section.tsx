@@ -1,3 +1,4 @@
+import AnimatedCard from 'modules/animations/components/animated-card';
 import React from 'react';
 import TeamMemberCard, { TeamMember } from './team-member-card';
 
@@ -63,8 +64,10 @@ const TeamSection: React.FC = () => {
         </div>
         {/* Bottom Part */}
         <div className="grid grid-cols-1 gap-4 place-self-center sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 ">
-          {TEAM_MEMBERS.map((member) => (
-            <TeamMemberCard key={member.name} member={member} />
+          {TEAM_MEMBERS.map((member, i) => (
+            <AnimatedCard key={member.name} index={i}>
+              <TeamMemberCard key={member.name} member={member} />
+            </AnimatedCard>
           ))}
         </div>
       </div>

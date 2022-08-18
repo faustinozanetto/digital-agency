@@ -4,7 +4,7 @@ import ContactPhone from './contact-phone';
 
 const ContactWays: React.FC = () => {
   return (
-    <div className="flex flex-row items-center space-x-6">
+    <div className="flex flex-row items-start space-x-6">
       {/* Phone */}
       <ContactPhone />
       {/* Email */}

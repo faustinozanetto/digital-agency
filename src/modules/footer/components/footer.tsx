@@ -3,7 +3,7 @@ import FooterLink from './footer-link';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#FFFCF3] p-4 md:p-8 lg:p-10">
+    <footer className="bg-white p-4 md:p-8 lg:p-10">
       {/* Logo */}
       <div className="mx-auto max-w-screen-xl text-center">
         <a href="/" className="flex items-center justify-center text-2xl font-semibold text-gray-900">

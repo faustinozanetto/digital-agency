@@ -1,3 +1,4 @@
+import AnimatedCard from 'modules/animations/components/animated-card';
 import React from 'react';
 import ServiceCard, { Service } from './service-card';
 
@@ -143,8 +144,10 @@ const ServicesSection: React.FC = () => {
         <div className="mt-4 sm:mt-8 md:mt-10">
           {/* Services */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8">
-            {SERVICES.map((service) => (
-              <ServiceCard key={service.title} service={service} />
+            {SERVICES.map((service, i) => (
+              <AnimatedCard key={service.title} index={i}>
+                <ServiceCard key={service.title} service={service} />
+              </AnimatedCard>
             ))}
           </div>
         </div>

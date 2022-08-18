@@ -1,8 +1,22 @@
+import React from 'react';
 import App from 'modules/app/components/app';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import 'tailwindcss/tailwind.css';
 
-const container = document.getElementById('root') as HTMLDivElement;
-const root = createRoot(container);
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement!);
 
-root.render(<App />);
+if (rootElement?.hasChildNodes()) {
+  hydrateRoot(
+    rootElement,
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+} else {
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
