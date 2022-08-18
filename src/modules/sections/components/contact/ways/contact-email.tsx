@@ -19,7 +19,10 @@ const ContactEmail: React.FC = () => {
         </svg>
       </div>
       <span className="text-lg font-bold text-gray-800">Email</span>
-      <a href="mailto:digitalagency@email.com" className="text-base font-semibold text-gray-700">
+      <a
+        href="mailto:digitalagency@email.com"
+        className="text-base font-semibold text-gray-700 transition-colors hover:text-lime-400"
+      >
         digitalagency@email.com
       </a>
     </div>

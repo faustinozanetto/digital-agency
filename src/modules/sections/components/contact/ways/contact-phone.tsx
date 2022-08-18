@@ -18,7 +18,10 @@ const ContactPhone: React.FC = () => {
         </svg>
       </div>
       <span className="text-lg font-bold text-gray-800">Phone</span>
-      <a href="tel:+1-234-567-8900" className="text-base font-semibold text-gray-700">
+      <a
+        href="tel:+1-234-567-8900"
+        className="text-base font-semibold text-gray-700 transition-colors hover:text-lime-400"
+      >
         +1-234-567-8900
       </a>
     </div>

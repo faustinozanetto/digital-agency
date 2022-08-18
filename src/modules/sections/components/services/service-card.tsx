@@ -14,7 +14,7 @@ const ServiceCard: React.FC<IServiceCardProps> = (props) => {
   const { service } = props;
 
   return (
-    <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-300 bg-white p-8 text-gray-900 drop-shadow-lg">
+    <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-300 bg-white p-6 text-gray-900 drop-shadow-lg md:p-8">
       {/* Icon */}
       <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gray-100">{service.icon}</div>
       {/* Title */}
