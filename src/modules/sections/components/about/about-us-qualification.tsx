@@ -10,7 +10,7 @@ const AboutUsQualification: React.FC<IAboutUsQualificationProps> = (props) => {
   return (
     <div className="flex flex-row items-center p-2">
       <svg
-        className="mr-2 h-8 w-8 text-lime-400"
+        className="mr-2 h-6 w-6 text-lime-400 sm:h-8 sm:w-8"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const AboutUsQualification: React.FC<IAboutUsQualificationProps> = (props) => {
           clipRule="evenodd"
         ></path>
       </svg>
-      <span className="text-lg font-semibold text-gray-800">{text}</span>
+      <span className="text-base font-semibold text-gray-800 sm:text-lg">{text}</span>
     </div>
   );
 };
