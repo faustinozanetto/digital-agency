@@ -3,7 +3,7 @@ import NewsletterForm from './newsletter-form';
 
 const NewsLetterSection: React.FC = () => {
   return (
-    <section className="bg-[#FFFCF3] py-8 sm:py-10 md:py-16">
+    <section className="bg-white py-8 sm:py-10 md:py-16">
       <div className="mx-auto max-w-screen-xl py-8 px-4 lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl ">

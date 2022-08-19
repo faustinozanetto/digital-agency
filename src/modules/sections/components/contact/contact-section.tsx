@@ -4,7 +4,7 @@ import ContactWays from './ways/contact-ways';
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="bg-white py-8 sm:py-10 md:py-16">
+    <section className="bg-[#FFFCF3] py-8 sm:py-10 md:py-16">
       <div className="mx-auto max-w-screen-xl items-center gap-8 py-8 px-4 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16">
         {/* Heading and Subtitle */}
         <div className="flex flex-col items-start text-left space-y-4">
